@@ -1,0 +1,119 @@
+.AwuraHeader{
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.AwuraLogoAndName{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.AwuraLogo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80px;
+}
+
+.AwuraName{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-stretch: ultra-expanded;
+    margin-left: 10px;
+    color: rgb(21, 168, 204);
+}
+.AwuraNavigation{
+    display: flex;
+    align-items: center;
+    margin-right: 25%;
+    width: 16%;
+}
+.AwuraNavLinks{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+.Links{
+    color: rgba(0,0,0,.55);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+.Links:hover{
+    color: rgb(21, 168, 204);
+}
+
+.Links:active{
+    color: rgb(21, 168, 204);
+}
+
+/* ... Existing CSS ... */
+
+.AwuraNavigation.open {
+    display: block;
+  }
+  
+  .HamburgerIcon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .Bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    /* transition: 0.4s; */
+    transform: translate(100px, 0px);
+  }
+  
+  .Bar.open {
+    transform: translate(95px, 56px);
+    background-color: #a565b2;
+  }
+  
+  /* Media query for screens less than 1024px */
+  @media (max-width: 1024px) {
+    .AwuraLogoAndName{
+        margin-left: 1%;
+    }
+    .HamburgerIcon {
+      display: block;
+    }
+  
+    .AwuraNavLinks {
+      display: none;
+      translate: -20% 0%;
+    }
+  
+    .AwuraNavigation.open .AwuraNavLinks {
+      display: block;
+    }
+  }
+  
+/* 0909 84 71 70
+0909 84 17 71
+
+0909 84 17 71
+
+0909 84 70 17 */
